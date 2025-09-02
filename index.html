@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game - Levels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2 id="title">🎯 Choose Your Level</h2>
+    <div id="levelSelect" class="level-selection">
+      <button onclick="startQuiz('easy')">Easy</button>
+      <button onclick="startQuiz('medium')">Medium</button>
+      <button onclick="startQuiz('hard')">Hard</button>
+    </div>
+    <div id="quizArea" style="display:none;">
+      <div id="progress" class="progress"></div>
+      <h2 id="question">Question will appear here</h2>
+      <div id="options" class="options"></div>
+      <button id="nextBtn">Next</button>
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
